@@ -1,41 +1,10 @@
-/*
-	The7 by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
-/*
-
-[Table of content]
-
-1. General Styling
-2. Header
-3. Home Slider, Parallax & Video
-4. Services Section
-5. Work Section
-6. Logo Carousel
-7. CLient Carousel
-8. Blog Section
-9. Pricing Section
-10. Contact & Comment Forms
-11. Footer
-12. Loader
-13. Clearfix
-
-
-[Color codes]
-Green #1abc9c
-Dark Blue #16a085
-Grey #ECF0F1
-
-*/
-
 /* *********************************************************
   General Styling 
 ********************************************************* */
 
 *, *:before, *:after {
   box-sizing: border-box;
+  /* scroll-behavior: smooth; */
 }
 
 .wrap {
@@ -325,11 +294,11 @@ blockquote p {
 .logo {
   display: block;
   float: left;
-  width: 104px;
-  height: 46px;
+  width: 150px;
+  height: 60px;
   text-indent: -9999px;
   background: url(images/logo.svg) no-repeat;
-  background-size: 104px 46px;
+  background-size: 150px 60px;
 }
 
 .logo:hover, .logo:focus {
@@ -625,20 +594,18 @@ blockquote p {
 .recent-work {
   background: #6578bc;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #6578bc 0%, #1abc9c 100%);
+  background: -moz-linear-gradient(left,  #42b5e7, #377faf , #f8f08f ,#ff5c5e);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6578bc), color-stop(100%, #1abc9c));
+  background: -webkit-gradient(linear, left top, right top, color-stop(#42b5e7), color-stop(#377faf), color-stop(#f8f08f),color-stop(#ff5c5e));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #6578bc 0%, #1abc9c 100%);
+  background: -webkit-linear-gradient(left,  #42b5e7, #377faf , #f8f08f ,#ff5c5e);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #6578bc 0%, #1abc9c 100%);
+  background: -o-linear-gradient(left, #42b5e7, #377faf , #f8f08f ,#ff5c5e);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #6578bc 0%, #1abc9c 100%);
+  background: -ms-linear-gradient(left, #42b5e7, #377faf , #f8f08f ,#ff5c5e);
   /* IE10+ */
-  background: linear-gradient(to right, #6578bc 0%, #1abc9c 100%);
+  background: linear-gradient(to right, #42b5e7, #377faf , #f8f08f ,#ff5c5e);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6578bc', endColorstr='#1abc9c', GradientType=1);
-  /* IE6-9 */
 
   position: relative;
   margin-bottom: 1em;
@@ -1414,7 +1381,7 @@ footer p, footer a {
   position: relative;
   display: table;
   margin: 0 auto;
-  background: #fff;
+  background: #2C2D31;
 }
 
 .staff-img {
@@ -1434,6 +1401,7 @@ footer p, footer a {
 
 .staff-content h5 {
   margin-bottom: .5em;
+  color: white;
 }
 
 .staff-content span {
@@ -1446,7 +1414,7 @@ footer p, footer a {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background: #fff;
+  background: #2C2D31;
   width: 100%;
   opacity: 0;
   padding: 7px 0;
@@ -1464,7 +1432,7 @@ footer p, footer a {
   font-size: 1.5em;
   display: table;
   padding: 8px;
-  color: #484f58;
+  color: #ffffff;
 }
 
 .sl-fb i:hover {
@@ -1495,7 +1463,7 @@ footer p, footer a {
 .loader-overlay {
   width: 100%;
   height: 100%;
-  background: #ECF0F1;
+  background: #2C2D31; 
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -1505,51 +1473,15 @@ footer p, footer a {
 }
 
 .loader {
-  height: 50px;
+  width: 150px;
+  height: 60px;
   left: 50%;
   margin: -25px 0 0 -75px;
   position: absolute;
+  text-indent: -9999px;
   top: 50%;
-  width: 150px;
-}
-
-.loader .bar {
-  background-color: #69C98C;
-  font-size: 0;
-  height: 6px;
-  border-radius: 3px;
-  opacity: 0;
-  width: 25px;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: subtleIn;
-  -webkit-animation-timing-function: ease-in-out;
-  display: inline-block;
-}
-
-.loader .bar:nth-child(1) {
-  -webkit-animation-delay: 0s;
-}
-
-.loader .bar:nth-child(2) {
-  background-color: #1abc9c;
-  -webkit-animation-delay: .3s;
-}
-
-.loader .bar:nth-child(3) {
-  background-color: #1AB4BC;
-  -webkit-animation-delay: .6s;
-}
-
-.loader .bar:nth-child(4) {
-  background-color: #1AA1BC;
-  -webkit-animation-delay: .9s;
-}
-
-.loader .bar:nth-child(5) {
-  background-color: #1A7EBC;
-  -webkit-animation-delay: 1.2s;
+  background:url("/images/logo.svg");
+  background-repeat: no-repeat;
 }
 
 @-webkit-keyframes subtleIn {
@@ -1596,7 +1528,7 @@ footer p, footer a {
 
 @media handheld, only screen and (max-width: 767px) {
   #top-header {
-    position: absolute;
+    position: fixed;
     padding: 8px 0;
   }
 
