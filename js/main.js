@@ -1,11 +1,4 @@
 $(document).ready(function () {
-
-	/**
-	 * Author: Heather Corey
-	 * jQuery Simple Parallax Plugin
-	 *
-	 */
-
 	(function ($) {
 
 		$.fn.parallax = function (options) {

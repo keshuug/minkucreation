@@ -1,5 +1,3 @@
-// SmoothScroll v0.9.9
-// Licensed under the terms of the MIT license.
 
 function ssc_init() {
     if (!document.body) return;
