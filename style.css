@@ -734,9 +734,6 @@ blockquote p {
 /* *********************************************************
   Clients Logos Section 
 ********************************************************* */
-.client{
-  text-align: center;
-}
 .cl-logo-carousel .item figure {
   max-height: 100px;
   margin: 5px;
