@@ -14,7 +14,7 @@
 
 .grey {
   background: #ECF0F1;
-  padding: 100px 0 150px;
+  padding: 50px 0 150px;
 }
 
 a {
@@ -480,7 +480,7 @@ blockquote p {
 .parallax-section {
   z-index: -1;
   clear: both;
-  background-image: url('images/home.jpg');
+  background-image: url('images/home2.jpg');
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -1086,7 +1086,7 @@ blockquote p {
   padding-top: 10%;
 }
 .contact {
-  padding-top: 0;
+  padding-top: 70px;
 }
 
 .contact h2 {
@@ -1390,6 +1390,7 @@ footer p, footer a {
   position: relative;
   display: table;
   width: 100%;
+  filter: grayscale(0.9);
 }
 
 .staff-img img {
