@@ -1082,7 +1082,10 @@ blockquote p {
 /* *********************************************************
  Map, Contact & Comment Forms
 ********************************************************* */
-
+.contact-logo{
+  padding-top: 10%;
+  filter:invert(10);
+}
 .contact {
   padding-top: 0;
 }
