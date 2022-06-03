@@ -484,6 +484,16 @@
     <div class="wrap contact" id="contact">
         <div class="grid">
             <h2>Contact</h2>
+            <?php
+            
+            // $msg="";
+            // if(isset($_GET["success"])){
+            //     $msg = "Mail has ben sent successfully";
+                
+            // }
+            
+            ?>
+            
             <div class="col-1-2">
                 <div class="content address">
                     <h3>Talk to us</h3>
@@ -517,15 +527,15 @@
                 </div>
             </div>
             <div class="col-1-2 pleft-25 col-md-10">
-                <!-- <div class="content contact-form"> -->
-                    <!-- <form class="form" method="post" role="form">
-                        <input type="text" class="comment-name" placeholder="Name*" required>
-                        <input type="email" class="comment-email" placeholder="Email*" required>
-                        <input type="text" class="comment-subject" placeholder="Subject">
-                        <textarea class="required comment-text" placeholder="Message..." required></textarea>
-                        <input type="submit" value="Send Message" class="btn submit comment-submit">
-                    </form> -->
-                    <img src="/images/logo2.svg" alt="logo" srcset="" class="contact-logo">
+                <div class="content contact-form">
+                     <form class="form" method="post" action="mail.php" role="form">
+                        <input type="text" name="name" class="comment-name" placeholder="Name*" required>
+                        <input type="email" name="email" class="comment-email" placeholder="Email*" required>
+                        <input type="text" name="subject" class="comment-subject" placeholder="Subject">
+                        <textarea class="required comment-text" name="message" placeholder="Message..." required></textarea>
+                        <input type="submit" name="btn-send" value="Send Message" class="btn submit comment-submit">
+                    </form>
+                    <!-- <img src="/images/logo2.svg" alt="logo" srcset="" class="contact-logo">  -->
                 </div>
             </div>
         </div>
