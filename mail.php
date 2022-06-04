@@ -6,9 +6,10 @@ if(isset($_POST["btn-send"])){
     $userSub = $_POST["subject"];
     $userMsg = $_POST["message"];
 
-    $to = "no-reply@minkucreation.com";
+    $to = "connect@minkucreation.com";
 
     mail($to,$userSub,$userMsg,$userEmail);
+    mail($userEmail,"MinkuCreation","Thanks For Visiting Minku Creation, We Will Contact You Soon");
 
     header("location:index.php?success");
 }else{

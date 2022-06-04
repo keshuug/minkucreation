@@ -32,7 +32,7 @@
             <div class="col-1-1">
                 <div class="content">
                     <div class="logo-wrap">
-                        <a href="index.html" class="logo"></a>
+                        <a href="index.php" class="logo"></a>
                     </div>
                     <nav class="navigation">
                         <input type="checkbox" id="nav-button">
@@ -535,7 +535,7 @@
                         <textarea class="required comment-text" name="message" placeholder="Message..." required></textarea>
                         <input type="submit" name="btn-send" value="Send Message" class="btn submit comment-submit">
                     </form>
-                    <!-- <img src="/images/logo2.svg" alt="logo" srcset="" class="contact-logo">  -->
+                    
                 </div>
             </div>
         </div>
