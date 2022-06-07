@@ -5,12 +5,35 @@ if(isset($_POST["btn-send"])){
     $userEmail = $_POST["email"];
     $userSub = $_POST["subject"];
     $userMsg = $_POST["message"];
-    $headers = "From:" . $from;
-    $from = "no-reply@minkucreation.com";
+    // $headers = "From:" . $from;
+    // $from = "no-reply@minkucreation.com";
     $to = "connect@minkucreation.com";
+    $messege = "
+    <!DOCTYPE html>
+    <head>
+    <title>Minku Creation</title>
+    <style>
+        body {
+            background: url("minkucreation.com/images/uc.png") no-repeat center center fixed black;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        @media only screen and (max-width: 1200px) {
+            body {
+                background-size: 100%;
+            }
+        }
+    </style>
+    </head>
+    <body>
+    </body>
+    </html>
+    ";
 
     mail($to,$userSub,$userMsg,$userEmail);
-    mail($userEmail,"MinkuCreation","Thanks For Visiting Minku Creation, We Will Contact You Soon",$header);
+    mail($userEmail,"MinkuCreation",$messege);
 
     header("location:index.php?success");
 }else{
