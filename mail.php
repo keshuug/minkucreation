@@ -33,7 +33,7 @@ if(isset($_POST["btn-send"])){
     // """;
 
     mail($to,$userSub,$userMsg,$userEmail);
-    mail($userEmail,"MinkuCreation","<b>Dear $userName</b> \n Thanks For Visiting MinkuCreation We Will Contact You Soon On <code>$userEmail</code");
+    mail($userEmail,"MinkuCreation","Dear $userName \n Thanks For Visiting MinkuCreation. \n We Will Contact You Soon On $userEmail");
 
     header("location:index.php?success");
 }else{
