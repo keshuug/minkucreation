@@ -8,13 +8,13 @@ if(isset($_POST["btn-send"])){
     // $headers = "From:" . $from;
     // $from = "no-reply@minkucreation.com";
     $to = "connect@minkucreation.com";
-    $messege = "
+    $messege = """
     <!DOCTYPE html>
     <head>
     <title>Minku Creation</title>
     <style>
         body {
-            background: url("minkucreation.com/images/uc.png") no-repeat center center fixed black;
+            background: src("/images/uc.png") no-repeat center center fixed black ;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -30,7 +30,7 @@ if(isset($_POST["btn-send"])){
     <body>
     </body>
     </html>
-    ";
+    """;
 
     mail($to,$userSub,$userMsg,$userEmail);
     mail($userEmail,"MinkuCreation",$messege);
