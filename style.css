@@ -594,17 +594,17 @@ blockquote p {
 .recent-work {
   background: #6578bc;
   /* Old browsers */
-  background: -moz-linear-gradient(left,  #42b5e7, #377faf , #f8f08f ,#ff5c5e);
+  background: -moz-linear-gradient(left, #42b5e7, #377faf, #f8f08f, #ff5c5e);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(#42b5e7), color-stop(#377faf), color-stop(#f8f08f),color-stop(#ff5c5e));
+  background: -webkit-gradient(linear, left top, right top, color-stop(#42b5e7), color-stop(#377faf), color-stop(#f8f08f), color-stop(#ff5c5e));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left,  #42b5e7, #377faf , #f8f08f ,#ff5c5e);
+  background: -webkit-linear-gradient(left, #42b5e7, #377faf, #f8f08f, #ff5c5e);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #42b5e7, #377faf , #f8f08f ,#ff5c5e);
+  background: -o-linear-gradient(left, #42b5e7, #377faf, #f8f08f, #ff5c5e);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #42b5e7, #377faf , #f8f08f ,#ff5c5e);
+  background: -ms-linear-gradient(left, #42b5e7, #377faf, #f8f08f, #ff5c5e);
   /* IE10+ */
-  background: linear-gradient(to right, #42b5e7, #377faf , #f8f08f ,#ff5c5e);
+  background: linear-gradient(to right, #42b5e7, #377faf, #f8f08f, #ff5c5e);
   /* W3C */
 
   position: relative;
@@ -1156,12 +1156,12 @@ textarea {
   margin-top: 3em;
 }
 
-input:not([type=submit]):not([type=file]):focus, textarea:focus {
+/* input:not([type=submit]):not([type=file]):focus, textarea:focus {
   -webkit-animation: rubberBand 0.5s 1;
   -moz-animation: rubberBand 0.5s 1;
   -o-animation: rubberBand 0.5s 1;
   animation: rubberBand 0.5s 1;
-}
+} */
 
 /* *********************************************************
   Footer
@@ -1361,7 +1361,7 @@ footer p, footer a {
 .loader-overlay {
   width: 100%;
   height: 100%;
-  background: #2C2D31; 
+  background: #2C2D31;
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -1378,7 +1378,7 @@ footer p, footer a {
   position: absolute;
   text-indent: -9999px;
   top: 50%;
-  background:url("/images/logo.svg");
+  background: url("/images/logo.svg");
   background-repeat: no-repeat;
 }
 
