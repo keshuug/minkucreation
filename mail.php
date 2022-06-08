@@ -12,20 +12,6 @@ if(isset($_POST["btn-send"])){
     <!DOCTYPE html>
     <head>
     <title>Minku Creation</title>
-    <style>
-        body {
-            background: url("https://minkucreation.com/images/uc.png") no-repeat center center fixed black ;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-        @media only screen and (max-width: 1200px) {
-            body {
-                background-size: 100%;
-            }
-        }
-    </style>
     </head>
     <body>
     <h1>MinkuCreation</h1>
