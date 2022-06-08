@@ -28,7 +28,7 @@ if(isset($_POST["btn-send"])){
     </head>
     <body>
     <h2>Minku Creation</h2>
-    <p>Dear <b> $userName </b><br />
+    <p>Dear $userName<br />
         Thanks For Visiting <b>Minku creation</b><br />
         We Will Contact You Soon On $userEmail <br /></p>
     <a href= $minkucreation >Visit MinkuCreation</a>
