@@ -10,7 +10,7 @@ if(isset($_POST["btn-send"])){
     $headers  = "From: $from\r\n"; 
     $headers .= "Content-type: text/html\r\n";
     $to = "connect@minkucreation.com";
-    $messege = `Hello Minku Here`;
+    $messege = "hello minku here";
 
     mail($to,$userSub,$userMsg,$userEmail);
     mail($userEmail,"Thanks For Visiting Minku Creation",$messege,$headers);
