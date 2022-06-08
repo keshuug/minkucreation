@@ -8,8 +8,8 @@ if(isset($_POST["btn-send"])){
     // $headers = "From:" . $from;
     $from = "MinkuCreation@minkucreation.com";
     $headers  = "From: $from\r\n"; 
-    $headers[] = 'MIME-Version: 1.0';
-    $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+    $headers = 'MIME-Version: 1.0';
+    $headers = 'Content-type: text/html; charset=iso-8859-1';
     $to = "connect@minkucreation.com";
     $messege = `
     <html>
