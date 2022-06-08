@@ -9,18 +9,30 @@ if(isset($_POST["btn-send"])){
     $from = "MinkuCreation@minkucreation.com";
     $headers  = "From: $from\r\n"; 
     $headers .= "Content-type: text/html\r\n";
-    
+    $minkucreation = "https://minkucreation.com";
     $to = "connect@minkucreation.com";
     $messege = "
     <html>
     <head>
     <title>Minku Creation</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
     </head>
     <body>
-    <h1>Minku Creation </h1><br/><br/><br/>
-    <p>Dear $username<br/>
-    Thanks For Visiting <b>Minkucreation</b><br/>
-    We Will Contact You Soon On $userEmail <br/></p>
+    <h2>Minku Creation</h2>
+    <p>Dear <b>$username</b><br />
+        Thanks For Visiting <b>Minku creation</b><br />
+        We Will Contact You Soon On $userEmail <br /></p>
+    <a href=$minkucreation>Visit MinkuCreation</a>
     </body>
     </html>
     ";
