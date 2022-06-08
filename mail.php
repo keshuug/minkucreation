@@ -11,7 +11,7 @@ if(isset($_POST["btn-send"])){
     $headers .= "Content-type: text/html\r\n";
     $minkucreation = "https://minkucreation.com";
     $to = "connect@minkucreation.com";
-    $messege = "
+    $messege .= "
     <html>
     <head>
     <title>Minku Creation</title>
