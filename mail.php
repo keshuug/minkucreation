@@ -8,13 +8,12 @@ if(isset($_POST["btn-send"])){
     // $headers = "From:" . $from;
     $from = "MinkuCreation@minkucreation.com";
     $headers  = "From: $from\r\n"; 
-    $headers .= "Content-type: text/html\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $minkucreation = "https://minkucreation.com";
     $to = "connect@minkucreation.com";
-    $messege .= "
+    $messege = `
     <html>
     <head>
-    <title>Minku Creation</title>
     <style>
         body{
             background-color: black;
@@ -32,12 +31,13 @@ if(isset($_POST["btn-send"])){
     <p>Dear <b> $userName </b><br />
         Thanks For Visiting <b>Minku creation</b><br />
         We Will Contact You Soon On $userEmail <br /></p>
-    <a href=$minkucreation>Visit MinkuCreation</a>
+    <a href= $minkucreation >Visit MinkuCreation</a>
     </body>
     </html>
-    ";
-    
-
+    `;
+    // $messege = "<html><body>";
+    // $messege = '<h1 style="color:#f40;">Hi Jane!</h1>';
+    // $messege .= "<html><body>";
     mail($to,$userSub,$userMsg,$userEmail);
     mail($userEmail,"Thanks For Visiting Minku Creation",$messege,$headers);
 
