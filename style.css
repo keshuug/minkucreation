@@ -150,12 +150,12 @@ blockquote p {
   background: #16a085;
 }
 
-.btn:hover, .social-set a:hover, .team-social a i:hover, .header-carousel .owl-buttons .owl-prev:hover, .header-carousel .owl-buttons .owl-next:hover {
+/* .btn:hover, .social-set a:hover, .team-social a i:hover, .header-carousel .owl-buttons .owl-prev:hover, .header-carousel .owl-buttons .owl-next:hover {
   -webkit-animation: rubberBand .8s 1;
   -moz-animation: rubberBand .8s 1;
   -o-animation: rubberBand .8s 1;
   animation: rubberBand .8s 1;
-}
+} */
 
 @-webkit-keyframes rubberBand {
   0% {
