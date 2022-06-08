@@ -14,7 +14,7 @@ if(isset($_POST["btn-send"])){
     <title>Minku Creation</title>
     <style>
         body {
-            background: src("/images/uc.png") no-repeat center center fixed black ;
+            background: url("https://minkucreation.com/images/uc.png") no-repeat center center fixed black ;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -28,6 +28,7 @@ if(isset($_POST["btn-send"])){
     </style>
     </head>
     <body>
+    <h1>MinkuCreation</h1>
     </body>
     </html>
     `;
