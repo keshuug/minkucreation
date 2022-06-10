@@ -6,7 +6,7 @@ if(isset($_POST["btn-send"])){
     $userSub = $_POST["subject"];
     $userMsg = $_POST["message"];
     // $headers = "From:" . $from;
-    $from = "Minku Creation";
+    $from = "noreply@minkucreation.com";
     $headers  = "From: $from\r\n"; 
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $minkucreation = "https://minkucreation.com";
