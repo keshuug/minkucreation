@@ -7,8 +7,8 @@ if(isset($_POST["btn-send"])){
     $userMsg = $_POST["message"];
     // $headers = "From:" . $from;
     $from = "noreply@minkucreation.com";
-    // $headers  = "From: $from\r\n"; 
-    $headers  = "From: MinkuCreation\r\n"; 
+    $headers  = "From: $from\r\n"; 
+    // $headers  = "From: MinkuCreation\r\n"; 
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $minkucreation = "https://minkucreation.com";
     $to = "connect@minkucreation.com";
@@ -40,8 +40,8 @@ if(isset($_POST["btn-send"])){
     // $messege = '<h1 style="color:#f40;">Hi Jane!</h1>';
     // $messege .= "<html><body>";
     mail($to,$userSub,$userMsg,$userEmail);
-    // mail($userEmail,"Thanks For Visiting Minku Creation",$messege,$headers);
-    mail($userEmail,"Thanks For Visiting Minku Creation",$messege,$from,$headers);
+    mail($userEmail,"Thanks For Visiting Minku Creation",$messege,$headers);
+    // mail($userEmail,"Thanks For Visiting Minku Creation",$messege,$from,$headers);
 
     header("location:index.php?success");
 }else{
