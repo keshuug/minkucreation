@@ -57,7 +57,7 @@
             <div class="col-1-1">
                 <div class="content content-header">
                     <h2>Celebrating 2 Years of minku creation</h2>
-                    <p>A BRAND THAT HELPS YOU TO CREATE A BRAND</p>
+                    <p>A BRAND THAT HELPS YOU TO CREATE A BRANDe</p>
                     <!-- <a target="_blank" class="btn btn-ghost" href="#">Find Out More</a> -->
                 </div>
             </div>
