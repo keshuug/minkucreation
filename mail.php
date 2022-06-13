@@ -8,7 +8,7 @@ if(isset($_POST["btn-send"])){
     // $headers = "From:" . $from;
     $from = "noreply@minkucreation.com";
     // $headers  = "From: Minku Creation $from\r\n"; 
-    $headers = "From: Minku Creation <noreply@minkucreation.com>\r\n";
+    $headers = "From: Minku Creation $from \r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $minkucreation = "https://minkucreation.com";
     $to = "connect@minkucreation.com";
@@ -46,5 +46,3 @@ if(isset($_POST["btn-send"])){
 }else{
     header("location:index.php");
 }
-
-?>
