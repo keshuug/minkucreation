@@ -12,7 +12,7 @@ if(isset($_POST["btn-send"])){
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $minkucreation = "https://minkucreation.com";
     $to = "connect@minkucreation.com";
-    $messege .= "
+    $messege .= `
     <html>
     <head>
     <style>
@@ -35,7 +35,7 @@ if(isset($_POST["btn-send"])){
     <a href= $minkucreation >Visit MinkuCreation</a>
     </body>
     </html>
-    ";
+    `;
     // $messege = "<html><body>";
     // $messege = '<h1 style="color:#f40;">Hi Jane!</h1>';
     // $messege .= "<html><body>";
