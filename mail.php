@@ -7,8 +7,8 @@ if(isset($_POST["btn-send"])){
     $userMsg = $_POST["message"];
     // $headers = "From:" . $from;
     $from = "noreply@minkucreation.com";
-    $headers  = "From: $from\r\n"; 
-    // $headers .= "From: Minku Creation <noreply@minkucreation.com>\r\n";
+    // $headers  = "From: $from\r\n"; 
+    $headers .= "From: Minku Creation <noreply@minkucreation.com>\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $minkucreation = "https://minkucreation.com";
     $to = "connect@minkucreation.com";
